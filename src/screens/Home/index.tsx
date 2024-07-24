@@ -2,10 +2,10 @@ import {useTheme} from 'styled-components';
 
 import Text from 'src/components/atom/Text';
 import {usei18n} from 'src/hooks/usei18n';
+import Button from 'src/components/molecules/Button';
 
 import useHome from './useHome';
 import {Container, Divider} from './styles';
-import {Button} from 'react-native';
 
 const Home: React.FC = () => {
   const theme = useTheme();
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
 
       <Divider />
 
-      <Button title="deslogar" onPress={logoutUser} />
+      <Button onPress={logoutUser}>{t('common.logout')}</Button>
     </Container>
   );
 };

@@ -5,5 +5,9 @@ export default {
     enter: 'Entrar',
     login: 'Login',
     home: 'Home',
+    logout: 'Deslogar',
+  },
+  Login: {
+    userName: 'Seu username',
   },
 };

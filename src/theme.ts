@@ -8,6 +8,7 @@ const myTheme: DefaultTheme = {
     secondary: '#2e2e2e',
     white: '#fff',
     gray: '#545454',
+    red: '#ff2e2e',
   },
 };
 
