@@ -1,11 +1,14 @@
 import {ThemeProvider} from 'styled-components/native';
 
-import {myTheme} from './theme';
 import Routes from './routes';
+import {myTheme} from './theme';
+import {TranslationProvider} from './hooks/usei18n';
 
 const App = () => (
   <ThemeProvider theme={myTheme}>
-    <Routes />
+    <TranslationProvider>
+      <Routes />
+    </TranslationProvider>
   </ThemeProvider>
 );
 

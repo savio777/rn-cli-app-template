@@ -1,11 +1,12 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {View} from 'react-native';
+
+import Login from '../screens/Login';
 
 const Stack = createNativeStackNavigator();
 
 const LoggedOff = () => (
-  <Stack.Navigator>
-    <Stack.Screen name="Login" component={() => <View />} />
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="Login" component={Login} />
   </Stack.Navigator>
 );
 
