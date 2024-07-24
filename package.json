@@ -9,7 +9,6 @@
     "start": "react-native start",
     "test": "jest",
     "type-check": "tsc",
-    "format": "prettier --write \"**/src/*.tsx\"",
     "android:release": "cd android/ && ./gradlew assembleRelease && echo android/app/build/outputs/apk/release",
     "android:aab": "cd android/ && ./gradlew bundleRelease && echo android/app/build/outputs/bundle/release",
     "start-reset": "yarn start --reset-cache",
@@ -50,9 +49,8 @@
   },
   "packageManager": "yarn@3.6.4",
   "lint-staged": {
-    "src/*.tsx": [
-      "yarn format"
-    ]
+    "*.ts": "eslint --fix",
+    "*.tsx": "eslint --fix"
   },
   "resolutions": {
     "styled-components": "^5"
