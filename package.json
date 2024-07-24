@@ -53,5 +53,8 @@
     "src/*.tsx": [
       "yarn format"
     ]
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
