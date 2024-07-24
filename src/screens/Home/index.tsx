@@ -3,27 +3,27 @@ import {useTheme} from 'styled-components';
 import Text from 'src/components/atom/Text';
 import {usei18n} from 'src/hooks/usei18n';
 
-import useLogin from './useLogin';
+import useHome from './useHome';
 import {Container, Divider} from './styles';
 import {Button} from 'react-native';
 
-const Login: React.FC = () => {
+const Home: React.FC = () => {
   const theme = useTheme();
   const {t} = usei18n();
 
-  const {handleSubmitLogin} = useLogin();
+  const {logoutUser} = useHome();
 
   return (
     <Container>
       <Text title size={22} color={theme.colors.main}>
-        {t('common.login')}
+        {t('common.home')}
       </Text>
 
       <Divider />
 
-      <Button title="logar" onPress={handleSubmitLogin} />
+      <Button title="deslogar" onPress={logoutUser} />
     </Container>
   );
 };
 
-export default Login;
+export default Home;

@@ -4,5 +4,6 @@ export default {
     password: 'Senha',
     enter: 'Entrar',
     login: 'Login',
+    home: 'Home',
   },
 };
