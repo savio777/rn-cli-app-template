@@ -12,4 +12,6 @@ const App = () => (
   </ThemeProvider>
 );
 
+// remove comment and add comment in last line to use storybook
+// export {default} from '../.storybook';
 export default App;

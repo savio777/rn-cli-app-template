@@ -1,11 +1,11 @@
 const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
+const withStorybook = require('@storybook/react-native/metro/withStorybook');
+const config = {
+  transformer: {
+    unstable_allowRequireContext: true,
+  },
+};
 
-/**
- * Metro configuration
- * https://reactnative.dev/docs/metro
- *
- * @type {import('metro-config').MetroConfig}
- */
-const config = {};
+const defaultConfig = mergeConfig(getDefaultConfig(__dirname), config);
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+module.exports = withStorybook(defaultConfig);
