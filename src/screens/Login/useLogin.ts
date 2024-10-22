@@ -1,6 +1,6 @@
 import {useCallback} from 'react';
 
-import RequestGetDataUser from 'src/services/RequestGetDataUser';
+import RequestGetDataUser from 'src/services/Session/RequestGetDataUser';
 import useSession from 'src/stores/useSession';
 
 import {ILoginSchema} from './schema';

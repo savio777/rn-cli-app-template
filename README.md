@@ -14,6 +14,7 @@
 - zustand
 - styled-components
 - axios
+- react-query
 - i18n
 - husky
 - react native navigation

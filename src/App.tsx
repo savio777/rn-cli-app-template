@@ -3,11 +3,16 @@ import {ThemeProvider} from 'styled-components/native';
 import Routes from './routes';
 import {myTheme} from './theme';
 import {TranslationProvider} from './hooks/usei18n';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+
+const client = new QueryClient();
 
 const App = () => (
   <ThemeProvider theme={myTheme}>
     <TranslationProvider>
-      <Routes />
+      <QueryClientProvider client={client}>
+        <Routes />
+      </QueryClientProvider>
     </TranslationProvider>
   </ThemeProvider>
 );

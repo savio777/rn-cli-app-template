@@ -1,4 +1,4 @@
-import api from '.';
+import api from 'src/api';
 
 type Params = {
   username: string;

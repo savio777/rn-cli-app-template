@@ -10,4 +10,7 @@ export default {
   Login: {
     userName: 'Seu username',
   },
+  Home: {
+    title: 'Bem vindo, ',
+  },
 };

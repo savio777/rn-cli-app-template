@@ -1,4 +1,4 @@
-import {Dimensions, PixelRatio} from 'react-native';
+import {Dimensions, PixelRatio, StyleProp, TextStyle} from 'react-native';
 import capitalizeWord from 'src/utils/capitalizeWord';
 import styled, {css} from 'styled-components/native';
 
@@ -23,6 +23,8 @@ interface IText {
   h2?: boolean;
   h3?: boolean;
   h4?: boolean;
+
+  style?: StyleProp<TextStyle>;
 }
 
 export const pixelRatioNormalizer = (size: number): number => {
