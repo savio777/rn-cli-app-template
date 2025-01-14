@@ -22,3 +22,6 @@
 
 ![print login](./assets/print_login.png)
 ![print storybook](./assets/storybook.png)
+
+### upgrades [link helper upgrade rn](https://react-native-community.github.io/upgrade-helper):
+- 0.75.4 -> 0.76.6
